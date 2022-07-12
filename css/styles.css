@@ -11,8 +11,7 @@
     --primari-text-color: #757575;
     --tittle-text-color: #212121;
     --acsent-color: #2196f3;
-    --second-acsent-color: #f3f3f3;
-    --primary-bg-color: #ffffff;
+    --second-acsent-color: #ffffff;
     --second-bg-color-bt: #f5f4fa;
 }
 
@@ -64,7 +63,7 @@ body {
 .nav-auth {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: calc(16 / 14);
     letter-spacing: 0.02em;
 }
 
@@ -72,6 +71,8 @@ body {
 .nav-auth:hover,
 .nav-tab:focus,
 .nav-auth:focus,
+.footer-auth:hover,
+.footer-auth:focus,
 .nav-tab.current {
     color: var(--acsent-color);
 }
@@ -99,6 +100,7 @@ background-color: #2f303a;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 /* Заголовки секцій */
@@ -106,7 +108,7 @@ background-color: #2f303a;
     color: var(--tittle-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: calc(42 / 36);
     text-align: center;
 }
 
@@ -154,6 +156,7 @@ background-color: #2f303a;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    cursor: pointer;
 }
 
 .filter-button:hover,
