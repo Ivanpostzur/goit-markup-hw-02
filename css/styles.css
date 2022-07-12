@@ -77,9 +77,12 @@ body {
 }
 
 /* Герой */
+.hero{
+background-color: #2f303a;
+}
 .hero-title {
     color: var(--second-acsent-color);
-    background-color: #2f303a;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
