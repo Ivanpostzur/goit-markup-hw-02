@@ -13,6 +13,7 @@
     --acsent-color: #2196f3;
     --second-acsent-color: #ffffff;
     --second-bg-color-bt: #f5f4fa;
+    --footer-bg: #2f303a;
 }
 
 body {
@@ -23,9 +24,35 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-filter{
+    list-style: none;
+    margin-bottom: 50px;
+    padding: 0;
+
 }
 
 .link,
@@ -53,6 +80,7 @@ body {
     color: var(--acsent-color);
 }
 
+
 /* Навігація */
 
 .nav-tab {
@@ -79,11 +107,15 @@ body {
 
 /* Герой */
 .hero{
-background-color: #2f303a;
+    margin-bottom: 0;
+    padding: 200px 0 200px;
+    background-color: #2f303a;
+    text-align: center;
 }
 .hero-title {
     color: var(--second-acsent-color);
-    
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -93,28 +125,62 @@ background-color: #2f303a;
 }
 
 .hero-button {
-    color: var(--second-acsent-color);
-    background-color: var(--acsent-color);
     font-family: inherit;
+    background: var(--acsent-color);
+    min-width: 200px;
+    padding: 10px 32px;
+    height: 50px;
+    border: 1px solid var(--acsent-color);
+    border-radius: 3px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.8px;
     letter-spacing: 0.06em;
+    color: var(--second-acsent-color);
+    transition: 0.3s linear;
     cursor: pointer;
 }
+/*section*/
 
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    align-items: center;
+}
+
+.no-pb {
+    padding-bottom: 0;
+}
+
+.no-color{
+    background-color: var(--second-bg-color-bt);
+}
 /* Заголовки секцій */
+
 .section-title {
     color: var(--tittle-text-color);
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
 }
 
+.visually-hidden{
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+ padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+}
+
 /* Наші переваги */
 .feature-list-title {
     color: var(--tittle-text-color);
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -182,3 +248,38 @@ background-color: #2f303a;
     line-height: 1.87;
 }
 
+/* Footer */
+
+.footer {
+    width: 100%;
+    background: var(--footer-bg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-item {
+    font-style: normal;
+    line-height: 1.19;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-item:hover,
+.footer-item:focus {
+    color: var(--acsent-color);
+}
+
+.footer-address {
+    margin-bottom: 9px;
+}
+
+.footer-address>a {
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.7;
+    color: var(--second-acsent-color);
+}

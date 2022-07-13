@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студия</title>
+    <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- Шапка -->
     <header>
+        <div class="container">
         <nav class="site-nav">
             <a href="./index.html" class="header-logo logo">
                 <span class="logo-part">Web</span>Studio
@@ -34,6 +38,7 @@
             <li><a href="mailto:" class="nav-auth link">info@devstudio.com</a></li>
             <li><a href="tel:" class="nav-auth link">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
 
     <!-- Унікальна частина -->
@@ -45,8 +50,10 @@
         </section>
 
         <!-- Переваги -->
-        <section class="section">
-            <h2 class="section-title">Наши преимущества</h2>
+        
+        <section class="section no-pb">
+            <div class="container">
+            <h2 class="visually-hidden">Наши преимущества</h2>
 
             <ul class="feature-list list">
                 <li>
@@ -74,10 +81,13 @@
                     </p>
                 </li>
             </ul>
+            </div>
         </section>
 
         <!-- Чим ми займаємось -->
+        
         <section class="section">
+            <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="list">
                 <li><img src="./images/what_we_do_1.jpg" alt="Компьютер и айрад на рабочем столе" width="370"></li>
@@ -86,10 +96,12 @@
                         width="370">
                 </li>
             </ul>
+            </div>
         </section>
-
+        
         <!-- Наша команда -->
-        <section class="section">
+        <section class="section no-pb no-color">
+            <div class="container">
             <h2 class="section-title">Наша команда</h2>
 
             <ul class="team-list list">
@@ -114,20 +126,27 @@
                     <p class="team-card-position">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 
     <!-- Підвал -->
     <footer class="footer">
-        <a href="./" class="footer-logo logo">
+        <div class="container foot">
+        <a href="./index.html" class="footer-logo logo">
             <span class="logo-part">Web</span>Studio
         </a>
         <address class="address">
-            г. Киев, пр-т Леси Украинки, 26
-            <a href="mailto:" class="footer-auth link">info@devstudio.com</a>
-            <a href="tel:" class="footer-auth link">+38 096 111 11 11</a>
+            <ul class="footer-list list">
+                <li class="footer-address link"><a href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
+                        rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li class="footer-item link"><a href="mailto:info@example.com"></a>info@example.com</li>
+                <li class="footer-item link"><a href="tel:+380991111111"></a>+38 099 111 11 11</li>
+            </ul>
         </address>
+        </div>
     </footer>
 </body>
 
 </html>
+
