@@ -36,11 +36,7 @@ ul{
     padding: 0;
 }
 
-.container {
-    width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
+/*Утиліти*/
 
 .list {
     list-style: none;
@@ -48,7 +44,26 @@ ul{
     padding: 0;
 }
 
-.list-filter{
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* site-nav */
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
+
+
+.list-filter {
     list-style: none;
     margin-bottom: 50px;
     padding: 0;
@@ -84,7 +99,19 @@ ul{
 /* Навігація */
 
 .nav-tab {
+    display: block;
+    padding: 32px 0;
     color: var(--tittle-text-color);
+}
+
+.auth-nav{
+margin-left: auto;
+}
+
+.nav-auth,
+.df-a {
+    display: inline-flex;
+    padding: 15px 0;
 }
 
 .nav-tab,
@@ -93,6 +120,10 @@ ul{
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+}
+
+.nav-auth.item + .item {
+    margin-left: 50px;
 }
 
 .nav-tab:hover,
@@ -104,6 +135,14 @@ ul{
 .nav-tab.current {
     color: var(--acsent-color);
 }
+
+/*main-nav*/
+
+.main-nav {
+display: flex;
+align-items: center;
+}
+
 
 /* Герой */
 .hero{
