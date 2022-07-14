@@ -14,6 +14,7 @@
     --second-acsent-color: #ffffff;
     --second-bg-color-bt: #f5f4fa;
     --footer-bg: #2f303a;
+    --border--: #eeeeee;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin: 0;
 }
 h1,
 h2,
@@ -144,8 +146,15 @@ margin-left: auto;
 .main-nav {
 display: flex;
 align-items: center;
+
 }
 
+.bb-q{
+
+    width: 10000px;
+    
+    border-bottom: 1px solid var(--border--);
+}
 
 /* Герой */
 .hero{
@@ -251,7 +260,11 @@ margin-left: 30px;
 }
 
 .team-card{
+    background-color: var(--second-acsent-color);
     width: calc((100% - 60px) / 4);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+
 }
 
 .team-card + .team-card {
@@ -262,10 +275,13 @@ margin-left: 30px;
     color: var(--tittle-text-color);
     font-weight: 500;
     font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-card-position {
     font-size: 16px;
+    margin-bottom: 30px;
 }
 
 /* footer */
@@ -344,6 +360,7 @@ margin-left: 30px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .project-card-type {
@@ -353,6 +370,13 @@ margin-left: 30px;
 
 .project-item{
     width: alc((100% - 60px) / 3);
+    border-right: 1px solid var(--border--);
+    border-bottom: 1px solid var(--border--);
+    border-left: 1px solid var(--border--);
+}
+
+.project-name{
+    margin: 20px 24px ;
 }
 
 /* Footer */
