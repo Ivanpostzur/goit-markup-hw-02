@@ -45,7 +45,7 @@ ul{
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -179,6 +179,9 @@ align-items: center;
     transition: 0.3s linear;
     cursor: pointer;
 }
+
+b.f
+
 /*section*/
 
 .section{
@@ -237,6 +240,12 @@ margin-left: 30px;
 /* Наша коанда */
 .team-list {
     text-align: center;
+    display: flex;
+    padding-bottom: 64px;
+}
+
+.team-card + .team-card {
+    margin-left: 30px;
 }
 
 .team-card-title {
@@ -257,6 +266,16 @@ margin-left: 30px;
 
 .footer-auth {
     color: rgba(255, 255, 255, 0.6);
+}
+
+/*About*/
+
+.about-list {
+display: flex;
+}
+
+.about-item + .about-item{
+margin-left: 30px;
 }
 
 /* ===============  Портфоліо ============= */
