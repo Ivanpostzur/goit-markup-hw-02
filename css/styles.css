@@ -39,9 +39,9 @@ ul{
 /*Утиліти*/
 
 .list {
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .container {
@@ -67,8 +67,11 @@ ul{
     list-style: none;
     margin-bottom: 50px;
     padding: 0;
-
+    display: flex;
+    justify-content: center;
 }
+
+
 
 .link,
 .logo,
@@ -170,7 +173,7 @@ align-items: center;
     padding: 10px 32px;
     height: 50px;
     border: 1px solid var(--acsent-color);
-    border-radius: 3px;
+    border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8px;
@@ -178,9 +181,12 @@ align-items: center;
     color: var(--second-acsent-color);
     transition: 0.3s linear;
     cursor: pointer;
+    
 }
 
-b.f
+/*button*/
+
+
 
 /*section*/
 
@@ -244,6 +250,10 @@ margin-left: 30px;
     padding-bottom: 64px;
 }
 
+.team-card{
+    width: calc((100% - 60px) / 4);
+}
+
 .team-card + .team-card {
     margin-left: 30px;
 }
@@ -274,6 +284,10 @@ margin-left: 30px;
 display: flex;
 }
 
+.about-item{
+    width: alc((100% - 60px) / 3);
+}
+
 .about-item + .about-item{
 margin-left: 30px;
 }
@@ -289,6 +303,16 @@ margin-left: 30px;
     font-size: 16px;
     line-height: 1.62;
     cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 6px 22px;
+    border: 0;
+    border-radius: 4px;
+}
+
+.filter-button:not(:first-child) {
+    margin-left: 30px;
+
 }
 
 .filter-button:hover,
@@ -300,7 +324,18 @@ margin-left: 30px;
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/*Навігація по Партфоліо*/
+
+
+
 /* Наші роекти */
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .project-card-title {
     color: var(--tittle-text-color);
     font-weight: 700;
@@ -312,6 +347,10 @@ margin-left: 30px;
 .project-card-type {
     font-size: 16px;
     line-height: 1.87;
+}
+
+.project-item{
+    width: alc((100% - 60px) / 3);
 }
 
 /* Footer */
