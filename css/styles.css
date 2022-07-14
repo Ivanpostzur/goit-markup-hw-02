@@ -226,6 +226,14 @@ clip: rect(0 0 0 0);
     text-transform: uppercase;
 }
 
+.item-benefits:not(:first-child) {
+margin-left: 30px;
+}
+
+.feature-list{
+    display: flex;
+}
+
 /* Наша коанда */
 .team-list {
     text-align: center;
