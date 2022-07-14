@@ -295,6 +295,12 @@ margin-left: 30px;
 /* ===============  Портфоліо ============= */
 
 /* Фільтр */
+
+.filter-item:not(:first-child) {
+    margin-left: 30px;
+
+}
+
 .filter-button {
     color: var(--tittle-text-color);
     background-color: var(--second-bg-color-bt);
@@ -310,10 +316,6 @@ margin-left: 30px;
     border-radius: 4px;
 }
 
-.filter-button:not(:first-child) {
-    margin-left: 30px;
-
-}
 
 .filter-button:hover,
 .filter-button:focus,
