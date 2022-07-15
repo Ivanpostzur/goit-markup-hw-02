@@ -46,11 +46,16 @@ ul{
     list-style: none;
 }
 
+.heder {
+border-bottom: 1px solid var(--border--);
+}
+
 .container {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
+
 
 /* site-nav */
 
@@ -143,17 +148,11 @@ margin-left: auto;
 /*main-nav*/
 
 .main-nav {
-display: flex;
-align-items: center;
-
-}
-
-.bb-q{
-
-    width: 10000px;
+    display: flex;
+    align-items: center;
     
-    border-bottom: 1px solid var(--border--);
 }
+
 
 /* Герой */
 .hero{
@@ -252,6 +251,11 @@ margin-left: 30px;
 }
 
 /* Наша коанда */
+
+.team-section {
+    
+}
+
 .team-list {
     text-align: center;
     display: flex;
@@ -273,13 +277,14 @@ margin-left: 30px;
     color: var(--tittle-text-color);
     font-weight: 500;
     font-size: 16px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
 }
 
 .team-card-position {
     font-size: 16px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 /* footer */
@@ -377,6 +382,14 @@ margin-left: 30px;
 .project-name {
     margin: 0;
     padding: 20px 24px ;
+}
+
+.project-img {
+    display: block;
+}
+
+.team-img {
+    display: block;
 }
 
 /* Footer */
